@@ -1,0 +1,64 @@
+.header {
+    background-color: $color-primary;
+    height: 5rem;
+    top: 0;
+    position: fixed;
+    width: 100%;
+    &__logo {
+       color: $color-secondary;
+       text-align: center;
+       
+    }
+}
+
+.menu-flex{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-evenly;
+   
+}
+
+.menu{
+  
+  width: 20rem;
+  height: 25rem;
+  text-align: center;
+  align-items: center;
+  background: #fff;
+  margin-top: 13.5rem;
+  justify-content: center;
+}
+
+
+.menu2__heading, .menu3__heading, .menu4__heading {
+
+    padding-top: 50%;
+}
+
+i {
+    padding-top: 27%;
+    
+}
+
+
+.footer{
+    background-color: $color-primary;
+    height: 3.5rem;
+    margin-top: 2rem;
+    margin-bottom: 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &--style{
+        padding-right: 1rem;
+        padding-left: 1rem;
+    }   .footer__mention{
+        padding-left: 1rem;
+
+    }
+}
+
+
