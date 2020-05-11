@@ -12,11 +12,12 @@
         <script src="https://kit.fontawesome.com/d2fd2b5b87.js" crossorigin="anonymous"></script>
         <link href="//db.onlinewebfonts.com/c/c455d94eee43dc4ceeb83c0c0fd0d4c8?family=Segoe+Print" rel="stylesheet" type="text/css"/>
         <link href="https://fonts.googleapis.com/css2?family=Bigshot+One&family=Croissant+One&family=Dancing+Script:wght@500&family=Devonshire&family=Kaushan+Script&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
         <meta name="author" content="Louis Deguitre">
         <title>Ohmyfood!</title>
         <meta name="description" content="Ohmyfood! est une entreprise de réservation de
         restaurants et de composition de menus en ligne. Notre concept permet aux utilisateurs
-        de réduire leur temps d’attente dans lesrestaurants car leur menu est préparé à
+        de réduire leur temps d’attente dans les restaurants car leur menu est préparé à
         l’avance. Plus de perte de temps à consulter la carte !">
         <meta property="og:title" content="Ohmyfood!"/>
         <meta property="og:type" content="website"/>
@@ -30,44 +31,48 @@
     </head>
 
     <body>
-
         <header class="header">
             <h1 class="header__logo">ohmyfood</h1>
         </header>
 
         <main class="container">
             <div class="menu-flex">
-                <a class="menu1--link" href="menu1.html">
-                    <section class="menu">
-                        <i class="fas fa-music"></i>
-                        <p class="menu1__heading">La note enchantée</p>
-                        <p class="menu1__heading2">MENU</p>
-                    </section>
-                </a>
-                  
-                <a class="menu2--link" href="menu2.html">
-                    <section class="menu">
-                        <p class="menu2__heading">Le chic à la française</p>
-                        <p class="menu2__heading2">Menu</p>
-                    </section>
-                </a>
-
+                <section class="menu">
+                    <div class="menu1">
+                        <a class="menu--link" href="menu1.html">
+                            <i class="fas fa-music"></i>
+                            <p class="menu1__title">La note enchantée</p>
+                            <p class="menu1__title__subtitle">MENU</p>
+                        </a>
+                    </div>
+                </section>
+               
+                <section class="menu">
+                    <div class="menu2">
+                        <a class="menu--link" href="menu2.html">
+                            <p class="menu2__title">Le chic à la française</p>
+                            <p class="menu2__title__subtitle">Menu</p>
+                        </a>
+                    </div>
+                </section>
+               
+                <section class="menu">
+                    <div class="menu3">
+                        <a class="menu--link" href="menu3.html"> 
+                            <div class="menu3__title">Le délice des papilles</div>
+                            <p class="menu3__title__subtitle">Menu</p>
+                        </a>
+                    </div>
+                </section>
                 
-                <a class="menu3--link" href="menu3.html"> 
-                    <section class="menu">
-                        <div class="menu3__heading">Le délice des papilles</div>
-                        <p class="menu3__heading2">Menu</p>
-                    </section>
-                </a>
-                
-
-                
-                <a class="menu4--link" href="menu4.html">
-                    <section class="menu">
-                        <p class="menu4__heading">La palette du goût</p>
-                        <p class="menu4__heading2">Menu</p>
-                    </section>
-                </a>
+                <section class="menu">
+                    <div class="menu4">
+                        <a class="menu--link" href="menu4.html">
+                            <p class="menu4__title">La palette du goût</p>
+                            <p class="menu4__title__subtitle">Menu</p>
+                        </a>
+                    </div>
+                </section>
             
             </div>
         </main>

@@ -1,21 +1,15 @@
 .btn {
+    width: 20%;
     background: $color-primary;
     color: $color-secondary;
-    font-size: 2rem;
-    cursor: pointer;
     padding: 0.5rem;
     margin-left: 40%;
     margin-top: 10rem;
     border-radius: 0.4rem;
-    width: 20%;
+    cursor: pointer;
     text-align: center;
-   
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    &__title:link, &__title:visited, &__title:active {
+    &__title:link{
         text-decoration: none;
         color: $color-secondary
     }
-    
 }

@@ -1,0 +1,83 @@
+.menu-flex {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-evenly;
+}
+
+.menu {
+  width: 20rem;
+  height: 25rem;
+  text-align: center;
+  margin-top: 12rem;
+  background: #fff; 
+}
+
+i {
+    padding-top: 27%;
+}
+
+.menu1__title__subtitle {
+    padding-top: 1.5rem;
+}
+
+.menu2__title {
+    padding-top: 50%;
+    &__subtitle {
+        padding-top: 2.5rem;
+    }
+}
+
+.menu3__title {
+    padding-top: 48%;
+    &__subtitle {
+        padding-top: 1.7rem;
+    }
+}
+
+.menu4__title {
+    padding-top: 47.5%;
+    &__subtitle {
+        padding-top: 1.7rem;
+    }
+}
+
+.footer{
+    background-color: $color-primary;
+    height: 3.5rem;
+    margin-top: 2rem;
+    margin-bottom: 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &--style{
+        padding-right: 1rem;
+        padding-left: 1rem;
+        &:hover {
+            animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
+            transform: translate3d(0, 0, 0);
+            backface-visibility: hidden;
+            perspective: 1000px;
+        }
+    }   
+}
+
+  @keyframes shake {
+    10%, 90% {
+      transform: translate3d(-1px, 0, 0);
+    }
+    
+    20%, 80% {
+      transform: translate3d(2px, 0, 0);
+    }
+  
+    30%, 50%, 70% {
+      transform: translate3d(-4px, 0, 0);
+    }
+  
+    40%, 60% {
+      transform: translate3d(4px, 0, 0);
+    }
+  }

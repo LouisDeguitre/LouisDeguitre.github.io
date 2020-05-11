@@ -1,72 +1,13 @@
 @font-face {font-family: "Segoe Print"; src: url("//db.onlinewebfonts.com/t/c455d94eee43dc4ceeb83c0c0fd0d4c8.eot"); src: url("//db.onlinewebfonts.com/t/c455d94eee43dc4ceeb83c0c0fd0d4c8.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/c455d94eee43dc4ceeb83c0c0fd0d4c8.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/c455d94eee43dc4ceeb83c0c0fd0d4c8.woff") format("woff"), url("//db.onlinewebfonts.com/t/c455d94eee43dc4ceeb83c0c0fd0d4c8.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/c455d94eee43dc4ceeb83c0c0fd0d4c8.svg#Segoe Print") format("svg"); }
 
-h1{
+h1 {
     font-size: 3rem;
-    font-family: '', sans-serif;
-    
+    font-family: 'Montserrat', sans-serif;
 }
 
-.menu{
-    
-    background: $color-secondary;
-    &__heading {
-
-    }
+.menu--link:link {  
+  text-decoration: none;    
 }
-
-.footer{
-    font-size: 1.5rem;
-    font-family: 'Dosis', sans-serif;
-    &--style:link, &--style:visited, &--style:active {
-        text-decoration: none;
-        color: $color-secondary;
-    } 
-}
-
-.footer--style:hover {
-    animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
-    transform: translate3d(0, 0, 0);
-    backface-visibility: hidden;
-    perspective: 1000px;
-  }
-  
-  @keyframes shake {
-    10%, 90% {
-      transform: translate3d(-1px, 0, 0);
-    }
-    
-    20%, 80% {
-      transform: translate3d(2px, 0, 0);
-    }
-  
-    30%, 50%, 70% {
-      transform: translate3d(-4px, 0, 0);
-    }
-  
-    40%, 60% {
-      transform: translate3d(4px, 0, 0);
-    }
-  }
-
-.btn{
-    font-family: 'Dosis', sans-serif;
-}
-
-
-a {
-    
-    &:active {
-        color: $color-secondary;
-    }
-}
-
-.menu1--link:link, .menu2--link:link, .menu3--link:link, .menu4--link:link {
-    text-decoration: none;
-    
-}
-
-
-
 
 i {
   font-size: 4rem;
@@ -75,61 +16,75 @@ i {
   -webkit-text-fill-color: transparent;
 }
 
-.menu1__heading {
+.menu1__title {
   font-family: 'Devonshire', cursive;
   font-size: 2.5rem;
   color: #43191F;
-  
+  &__subtitle {
+    font-family: "Segoe Print";
+    font-size: 2.8rem;
+    font-weight: bold;
+    color: #3C1218;
+  }
 }
 
-.menu2__heading {
+.menu2__title {
   font-family: 'Croissant One', cursive;
   font-size: 1.7rem;
   background: -webkit-linear-gradient(left,#C77412, #905BFD);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  &__subtitle {
+    font-family: 'Bigshot One', cursive;
+    font-size: 3.5rem;
+    color: #C77412;
+  }
 }
 
-.menu3__heading {
+.menu3__title {
   font-family: 'Dancing Script', cursive;
   font-size: 2.5rem;
   background: -webkit-linear-gradient(left,#133CE0, #0887FB);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-
+  &__subtitle {
+    font-family:'Segoe Print', sans-serif;
+    font-size: 3rem;
+    color: #0887FB;
+  }
 }
 
-.menu4__heading {
+.menu4__title {
   font-family: 'Kaushan Script', cursive;
   font-size: 2.5rem;
   background: -webkit-linear-gradient(left,#72BF56, #BFFF7E);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  &__subtitle {
+    font-family:'Segoe Print', sans-serif;
+    font-size: 3rem;
+    color: #72BF56;
+  }
 }
 
-.menu1__heading2{
-  font-family: "Segoe Print";
-  font-weight: bold;
-  font-size: 3rem;
-  color: #3C1218;
-} 
-
-.menu2__heading2 {
-  font-family: 'Bigshot One', cursive;
-  font-size: 3.5rem;
-  color: #C77412;
+.btn{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2rem;
 }
 
-.menu3__heading2  {
-  font-family:'Segoe Print', sans-serif;
-  font-size: 3rem;
-  color: #0887FB;
+.footer{
+    font-size: 1.5rem;
+    font-family: 'Montserrat', sans-serif;
+    &--style:link, &--style:visited, &--style:active {
+        text-decoration: none;
+        color: $color-secondary;
+    } 
+}
   
-}
-
-.menu4__heading2 {
-  font-family:'Segoe Print', sans-serif;
-  font-size: 3rem;
-  color: #72BF56;
   
-}
+
+
+
+
+
+
