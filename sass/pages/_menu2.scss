@@ -1,0 +1,58 @@
+#page2 .menu2__title {
+    text-align: center;
+    font-size: 2rem;
+    padding-top: 80px;
+    padding-bottom: 60px;
+}
+
+#page2 .dish, #page2 .chapter {
+    font-family: 'Lora', serif;
+}
+
+#page2 .page {
+    background-color: $color-menu2;
+}
+
+#page2 .chapter1 {
+  color: #C77412;
+  @include padding-bottom;
+}
+#page2 .chapter1 .dish {
+    color: #CD842F;
+}
+
+#page2 .chapter2 {
+    color: #A66699;
+    @include padding-bottom;
+}
+
+#page2 .chapter2 .dish {
+    color: #B179A6;
+}
+
+#page2 .chapter3 {
+    color: #6F4CCD;
+    padding-bottom: 100px;
+}
+
+#page2 .chapter3 .dish {
+    color: #6F4DCC;
+}
+
+#page2 .chapter {
+    font-size: 1.4rem;
+    padding-bottom: 2rem;
+    font-weight: 600;
+}
+
+#page2 .dish {
+    padding-left: 6rem;
+    padding-right: 6rem;
+    
+}
+
+#page2 .price {
+    font-size: 20px;
+    font-weight: 500;
+}
+

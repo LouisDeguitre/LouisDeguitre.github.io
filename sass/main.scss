@@ -2,6 +2,7 @@
 @import "./utils/functions";
 @import "./utils/mixins";
 @import "./utils/extensions";
+@import "./utils/media-querries";
 
 @import "./base/base";
 @import "./base/typography";
@@ -14,4 +15,10 @@
 @import "./layout/nav";
 @import "./layout/container";
 @import "./layout/form";
+
+@import "./pages/menu1";
+@import "./pages/menu2";
+@import "./pages/menu3";
+@import "./pages/menu4";
+@import "./pages/mention";
 

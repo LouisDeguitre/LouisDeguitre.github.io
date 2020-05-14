@@ -1,0 +1,43 @@
+#page4 .menu4__title {
+    text-align: center;
+    font-size: 4rem;
+    padding-top: 80px;
+    padding-bottom: 40px;
+}
+
+#page4 .dish, #page4 .chapter {
+    font-family:'Segoe Print', sans-serif;
+}
+
+#page4 .dish{
+   padding-left: 4.5rem;
+   padding-right: 4.5rem;
+   font-size: 0.9rem;
+}
+  
+#page4 .page {
+    background-color: $color-menu4;
+}
+
+#page4 .chapter1 {
+    @include padding-bottom;
+  }
+  
+#page4 .chapter2 {
+    @include padding-bottom;
+}
+
+#page4 .chapter3 {
+    padding-bottom:110px;
+}
+  
+#page4 .chapter {
+      font-size: 1.1rem;
+      padding-bottom: 1rem;
+}
+
+#page4 .price {
+  font-size: 18px;
+  font-weight: 500;
+}
+  

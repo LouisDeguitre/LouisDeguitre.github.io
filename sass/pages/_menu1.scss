@@ -1,0 +1,94 @@
+.container-menu {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    margin-top: 7rem;
+    margin-bottom: 5rem;
+    
+    
+}
+
+.page {
+    width: 35%;
+    height: 100%;
+    align-items: center;
+    @include box-shadow;
+}
+
+.chapter {
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.dish {
+    display: flex;
+    justify-content: space-between;
+}
+
+p {
+    padding: 7px;
+}
+
+#page1 .top-title {
+    text-align: center;
+}
+
+#page1 .page {
+    background-color: $color-menu1;
+}
+
+.bottom-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 40px;
+    & i {
+        font-size: 40px;
+    }
+}
+
+#page1 .dish, #page1 .chapter {
+    font-family:'Segoe Print', sans-serif;
+}
+
+.top-title {
+    padding-top: 60px;
+    padding-bottom: 30px;
+}
+
+.bottom-title .menu1__title {
+    font-size: 30px;
+    
+}
+
+#page1 .chapter1 {
+    @include padding-bottom;
+  }
+  #page1 .chapter2 {
+    @include padding-bottom;
+      
+  }
+  #page1 .chapter3 {
+    padding-bottom: 70px;
+  }
+  
+  #page1 .chapter {
+      font-size: 1.5rem;
+      padding-bottom: 2rem;
+      color: #50272C;
+      font-weight: 600;
+  }
+  
+  #page1 .dish {
+      padding-left: 4.5rem;
+      padding-right: 4.5rem;
+      font-size: 0.9em;
+      color: #50272C;
+      
+  }
+
+  #page1 .price {
+      font-size: 20px;
+      font-weight: 600;
+  }
