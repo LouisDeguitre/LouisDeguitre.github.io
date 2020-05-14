@@ -14,17 +14,19 @@
   display: flex;
   align-items: center;
   cursor: pointer;
+  
   @include box-shadow;
     &:hover .menu1, &:hover .menu2, &:hover .menu3, &:hover .menu4 {
     transform: scale(1.12);
+    opacity: 85%;
   }
 }
 
 .menu1, .menu2, .menu3, .menu4 {
   width: 100%;
   transform: scale(1);
-  transition: transform 400ms;
-  
+  opacity: 100%;
+  transition: transform 400ms; 
 }
 
 .menu1-color .menu {
