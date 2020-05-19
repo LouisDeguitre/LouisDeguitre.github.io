@@ -1,58 +1,82 @@
-#page2 .menu2__title {
-    text-align: center;
-    font-size: 2rem;
-    padding-top: 80px;
-    padding-bottom: 60px;
+#page2 {
+    .page {
+        background-color: $color-menu2;
+        .menu2__title {
+            text-align: center;
+            font-size: 2rem;
+            padding-top: 80px;
+            padding-bottom: 60px;
+        }
+    }
+    .chapter {
+        font-family: 'Lora', serif;
+        font-size: 1.4rem;
+        font-weight: 600;
+        
+    }
+    .dish {
+        font-family: 'Lora', serif;
+        padding-left: 6rem;
+        padding-right: 6rem;
+        @include lm {
+            padding-left: 0.5rem;
+            padding-right: 0.5rem;
+            font-size: 13px;
+        }
+    }
+    .price {
+        font-size: 20px;
+        font-weight: 500;
+        @include lm {
+            font-size: 17px;
+        }
+    }
+    .chapter1 {
+        color: #C77412;
+        @include padding-bottom;
+        .chapter {
+            width: 16rem;
+            background: linear-gradient(to top, #C77412 0%, #C77412 3px, transparent 4px) no-repeat;
+            background-size: 0 100%;
+            transition: background-size 300ms;
+            &:hover {
+                background-size: 100% 100%;
+           }
+        }
+        .dish {
+            color: #CD842F;
+        }
+    }
+    .chapter2 {
+        color: #A66699;
+         @include padding-bottom;
+         .chapter {
+             width: 12rem;
+            background: linear-gradient(to top, #A66699 0%, #A66699 3px, transparent 4px) no-repeat;
+            background-size: 0 100%;
+            transition: background-size 300ms;
+            &:hover {
+                background-size: 100% 100%;
+           }
+        }
+         .dish {
+            color: #B179A6;
+        }
+    }
+    .chapter3 {
+        color: #6F4CCD;
+        padding-bottom: 100px;
+        .chapter {
+            width: 15.3rem;
+            background: linear-gradient(to top, #6F4CCD 0%, #6F4CCD 3px, transparent 4px) no-repeat;
+            background-size: 0 100%;
+            transition: background-size 300ms;
+            &:hover {
+                background-size: 100% 100%;
+           }
+        }
+        .dish {
+            color: #6F4DCC;
+        }
+    }
 }
-
-#page2 .dish, #page2 .chapter {
-    font-family: 'Lora', serif;
-}
-
-#page2 .page {
-    background-color: $color-menu2;
-}
-
-#page2 .chapter1 {
-  color: #C77412;
-  @include padding-bottom;
-}
-#page2 .chapter1 .dish {
-    color: #CD842F;
-}
-
-#page2 .chapter2 {
-    color: #A66699;
-    @include padding-bottom;
-}
-
-#page2 .chapter2 .dish {
-    color: #B179A6;
-}
-
-#page2 .chapter3 {
-    color: #6F4CCD;
-    padding-bottom: 100px;
-}
-
-#page2 .chapter3 .dish {
-    color: #6F4DCC;
-}
-
-#page2 .chapter {
-    font-size: 1.4rem;
-    padding-bottom: 2rem;
-    font-weight: 600;
-}
-
-#page2 .dish {
-    padding-left: 6rem;
-    padding-right: 6rem;
-    
-}
-
-#page2 .price {
-    font-size: 20px;
-    font-weight: 500;
-}
-

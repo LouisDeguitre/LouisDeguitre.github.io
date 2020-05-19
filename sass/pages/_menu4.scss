@@ -1,43 +1,63 @@
-#page4 .menu4__title {
-    text-align: center;
-    font-size: 4rem;
-    padding-top: 80px;
-    padding-bottom: 40px;
+#page4 {
+    .page {
+        background-color: $color-menu4;
+        .menu4__title {
+            text-align: center;
+            font-size: 4rem;
+            padding-top: 80px;
+            padding-bottom: 40px;
+            @include lm {
+                font-size: 3rem;
+            }
+            @include sm {
+                font-size: 2.5rem
+            }
+        }
+    }
+    .chapter {
+        font-size: 1.1rem;
+        font-family:'Segoe Print', sans-serif;
+        background: linear-gradient(to top, #000000 0%, #000000 3px, transparent 4px) no-repeat;
+        background-size: 0 100%;
+        transition: background-size 300ms;
+        &:hover {
+             background-size: 100% 100%;
+        }   
+    }
+    .dish {
+        font-family:'Segoe Print', sans-serif;
+        padding-left: 4.5rem;
+        padding-right: 4.5rem;
+        font-size: 0.9rem;
+        @include lm {
+            padding-left: 0.2rem;
+            padding-right: 0.2rem;
+            font-size: 13px;
+        }
+    }
+    .price {
+        font-size: 18px;
+        font-weight: 500;
+        @include lm {
+            font-size: 17px;
+        }
+    }
+    .chapter1 {
+        @include padding-bottom;
+        .chapter {
+            width: 4.5rem;
+        }
+    }
+    .chapter2 {
+        @include padding-bottom;
+        .chapter {
+            width: 10.5rem;
+        }
+    }
+    .chapter3 {
+        padding-bottom:110px;
+        .chapter {
+            width: 11.5rem;
+        }
+    }
 }
-
-#page4 .dish, #page4 .chapter {
-    font-family:'Segoe Print', sans-serif;
-}
-
-#page4 .dish{
-   padding-left: 4.5rem;
-   padding-right: 4.5rem;
-   font-size: 0.9rem;
-}
-  
-#page4 .page {
-    background-color: $color-menu4;
-}
-
-#page4 .chapter1 {
-    @include padding-bottom;
-  }
-  
-#page4 .chapter2 {
-    @include padding-bottom;
-}
-
-#page4 .chapter3 {
-    padding-bottom:110px;
-}
-  
-#page4 .chapter {
-      font-size: 1.1rem;
-      padding-bottom: 1rem;
-}
-
-#page4 .price {
-  font-size: 18px;
-  font-weight: 500;
-}
-  

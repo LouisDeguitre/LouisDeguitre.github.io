@@ -5,3 +5,43 @@
 @mixin padding-bottom {
     padding-bottom: 40px;
 }
+
+// Media Querries
+// Mobiles
+@mixin sm {
+    @media screen and (max-width: 321px) {
+        @content;
+    }
+}
+
+@mixin mm {
+    @media screen and (max-width: 376px) {
+        @content;
+    }
+}
+
+@mixin lm {
+    @media screen and (max-width: 519px) {
+        @content;
+    }
+}
+
+// Tablet
+@mixin tablet {
+    @media screen and (max-width: 900px) {
+        @content;
+    }
+}
+
+// Laptop
+@mixin laptop {
+    @media screen and (max-width: 1101px) {
+        @content;
+    }
+}
+
+@mixin laptopl {
+    @media screen and (max-width: 1545px) {
+        @content;
+    }
+}

@@ -10,6 +10,10 @@
   text-decoration: none;    
 }
 
+#home h2 {
+  font-weight: 400;
+}
+
 i {
   font-size: 4rem;
   background: -webkit-linear-gradient(left,#F15861, #F78F6A);
@@ -72,11 +76,23 @@ i {
 .btn{
   font-family: 'Montserrat', sans-serif;
   font-size: 2rem;
+  @include tablet {
+    font-size: 1.7rem;
+  }
+  @include sm {
+    font-size: 1.5rem;
+  }
 }
 
 .footer{
     font-size: 1.5rem;
     font-family: 'Montserrat', sans-serif;
+    @include lm {
+      font-size: 1.1rem;
+    }
+    @include mm {
+      font-size: 0.9rem;
+    }
     &--style:link, &--style:visited, &--style:active {
         text-decoration: none;
         color: $color-secondary;

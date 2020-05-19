@@ -1,102 +1,75 @@
-.container-menu {
-    display: flex;
-    justify-content: center;
-    margin-top: 2rem;
-    margin-bottom: 5rem;
-    
-    
-}
-
-#page1 h2, #page2 h2, #page3 h2, #page4 h2 {
-    margin-top: 8rem;
-    text-align: center;
-    font-size: 35px;
-    color: #353535;
-    font-family: 'Roboto', sans-serif;
-}
-
-.page {
-    width: 35%;
-    height: 100%;
-    align-items: center;
-    @include box-shadow;
-}
-
-.chapter {
-    text-align: center;
-    padding-top: 20px;
-    padding-bottom: 20px;
-}
-
-.dish {
-    display: flex;
-    justify-content: space-between;
-}
-
-p {
-    padding: 7px;
-}
-
-#page1 .top-title {
-    text-align: center;
-}
-
-#page1 .page {
-    background-color: $color-menu1;
-}
-
-.bottom-title {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-bottom: 40px;
-    & i {
-        font-size: 40px;
-    }
-}
-
-#page1 .dish, #page1 .chapter {
-    font-family:'Segoe Print', sans-serif;
-}
-
-.top-title {
-    padding-top: 60px;
-    padding-bottom: 30px;
-}
-
 .bottom-title .menu1__title {
     font-size: 30px;
     
 }
 
-#page1 .chapter1 {
-    @include padding-bottom;
-  }
-  #page1 .chapter2 {
-    @include padding-bottom;
-      
-  }
-  #page1 .chapter3 {
-    padding-bottom: 70px;
-  }
-  
-  #page1 .chapter {
-      font-size: 1.5rem;
-      padding-bottom: 2rem;
-      color: #50272C;
-      font-weight: 600;
-  }
-  
-  #page1 .dish {
-      padding-left: 4.5rem;
-      padding-right: 4.5rem;
-      font-size: 0.9em;
-      color: #50272C;
-      
-  }
-
-  #page1 .price {
-      font-size: 20px;
-      font-weight: 600;
-  }
-
+#page1 {
+    .page {
+        background-color: $color-menu1;
+        .top-title {
+            text-align: center;
+            padding-top: 60px;
+            padding-bottom: 30px;
+        }
+    }
+    .bottom-title {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 40px;
+        & i {
+            font-size: 40px;
+        }
+    }
+    .chapter {
+        font-family:'Segoe Print', sans-serif;
+        font-size: 1.5rem;
+        color: #50272C;
+        font-weight: 600;
+        background: linear-gradient(to top, #50272C 0%, #50272C 3px, transparent 4px) no-repeat;
+        background-size: 0 100%;
+        transition: background-size 300ms;
+        &:hover {
+             background-size: 100% 100%;
+        }
+    }
+    .dish {
+        font-family:'Segoe Print', sans-serif;
+        padding-left: 4.5rem;
+        padding-right: 4.5rem;
+        font-size: 0.9em;
+        color: #50272C;
+        @include lm {
+            padding-left: 0.3rem;
+            padding-right: 0.3rem;
+            font-size: 12px;
+        }
+    }
+    .price {
+        font-size: 20px;
+        font-weight: 600;
+        @include lm {
+            font-size: 14px;
+        }
+        
+    }
+    .chapter1 {
+        @include padding-bottom;
+        .chapter {
+            width: 6rem;
+        }
+    }
+    .chapter2 {
+        @include padding-bottom;
+        .chapter {
+            width: 11rem;
+        }
+    }
+    .chapter3 {
+        padding-bottom: 70px;
+        .chapter {
+            width: 13rem;
+            
+        }
+    }
+}
