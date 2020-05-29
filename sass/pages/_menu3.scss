@@ -57,6 +57,18 @@
             top:calc(50% - 0px);
             width:250px;
             border-bottom: 4px ridge  #0228DD;
+            @include lm {
+                left:calc(-43px - 50px);
+                width: 5.8rem;
+            }
+            @include mm { 
+                left:calc(-23px - 50px);
+                width:4.5rem;
+            }
+            @include sm {
+                left:calc(0px - 50px);
+                width: 3rem;
+            }
         }
         .chapter:after {
             content:'';
@@ -64,7 +76,19 @@
             right:calc(-215px - 50px);
             top:calc(50% - 0px);
             width:250px;
-            border-bottom: 4px ridge  #0228DD;
+            border-bottom: 4px ridge  rgb(50, 63, 131);
+            @include lm {
+                right:calc(-43px - 50px);
+                width: 5.8rem;
+            }
+            @include mm { 
+                right:calc(-23px - 50px);
+                width:4.5rem;
+            }
+            @include sm {
+                right:calc(0px - 50px);
+                width:3rem;
+            }
             
         }      
     }
@@ -86,6 +110,18 @@
             top:calc(50% - 0px);
             width:250px;
             border-bottom: 4px ridge  #0670F3;
+            @include lm {
+                left:calc(-50px - 50px);
+                width: 6rem;
+            }
+            @include mm { 
+                left:calc(-29px - 50px);
+                width: 5rem;
+            }
+            @include sm {
+                left:calc(0px - 50px);
+                width: 3.5rem;
+            }
         }
         .chapter:after {
             content:'';
@@ -94,6 +130,18 @@
             top:calc(50% - 0px);
             width:250px;
             border-bottom: 4px ridge  #0670F3;
+            @include lm {
+                right:calc(-50px - 50px);
+                width: 6rem;
+            }
+            @include mm { 
+                right:calc(-29px - 50px);
+                width:5rem;
+            }
+            @include sm {
+                right:calc(0px - 50px);
+                width: 3.5rem;
+            }
         }      
     }
     .chapter3 {
@@ -114,6 +162,18 @@
             top:calc(50% - 0px);
             width:250px;
             border-bottom: 4px ridge  #229DF9;
+            @include lm {
+                left:calc(-55px - 50px);
+                width: 6rem;
+            }
+            @include mm { 
+                left:calc(-32px - 50px);
+                width: 5rem;
+            }
+            @include sm {
+                left:calc(0px - 50px);
+                width: 3.5rem;
+            }
         }
         .chapter:after {
             content:'';
@@ -122,6 +182,18 @@
             top:calc(50% - 0px);
             width:250px;
             border-bottom: 4px ridge  #229DF9;
+            @include lm {
+                right:calc(-55px - 50px);
+                width: 6rem;
+            }
+            @include mm { 
+                right:calc(-32px - 50px);
+                width: 5rem;
+            }
+            @include sm {
+                right:calc(0px - 50px);
+                width: 3.5rem;
+            }
         }      
     }
 }

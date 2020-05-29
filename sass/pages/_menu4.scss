@@ -54,6 +54,18 @@
             top:calc(50% - 0px);
             width:230px;
             border-bottom: 5px ridge  #84CE5F;
+            @include lm {
+                left:calc(-110px - 50px);
+                width: 9rem;
+            }
+            @include mm { 
+                left:calc(-85px - 50px);
+                width:8rem;
+            }
+            @include sm {
+                left:calc(-59px - 50px);
+                width: 6.5rem;
+            }
         }
         .chapter:after {
             content:'';
@@ -62,6 +74,18 @@
             top:calc(50% - 0px);
             width:230px;
             border-bottom: 5px ridge  #84CE5F;
+            @include lm {
+                right:calc(-110px - 50px);
+                width: 9rem;
+            }
+            @include mm { 
+                right:calc(-85px - 50px);
+                width: 8rem;
+            }
+            @include sm {
+                right:calc(-59px - 50px);
+                width: 6.5rem;
+            }
            
         }      
     }
@@ -83,6 +107,18 @@
             top:calc(50% - 0px);
             width:230px;
             border-bottom: 5px ridge  #A5EA71;
+            @include lm {
+                left:calc(-60px - 50px);
+                width: 6.5rem;
+            }
+            @include mm { 
+                left:calc(-35px - 50px);
+                width:5.1rem;
+            }
+            @include sm {
+                left:calc(-10px - 50px);
+                width:3.5rem;
+            }
         }
         .chapter:after {
             content:'';
@@ -91,6 +127,18 @@
             top:calc(50% - 0px);
             width: 230px;
             border-bottom: 5px ridge  #A5EA71;
+            @include lm {
+                right:calc(-60px - 50px);
+                width: 6.5rem;
+            }
+            @include mm { 
+                right:calc(-35px - 50px);
+                width:5.1rem;
+            }
+            @include sm {
+                right:calc(-10px - 50px);
+                width: 3.5rem;
+            }
         }      
     }
     .chapter3 {
@@ -111,6 +159,18 @@
             top:calc(50% - 0px);
             width:230px;
             border-bottom: 5px ridge  #CFFAA9;
+            @include lm {
+                left:calc(-50px - 50px);
+                width: 6rem;
+            }
+            @include mm { 
+                left:calc(-25px - 50px);
+                width: 4.5rem;
+            }
+            @include sm {
+                left:calc(0px - 50px);
+                width: 3rem;
+            }
         }
         .chapter:after {
             content:'';
@@ -119,6 +179,18 @@
             top:calc(50% - 0px);
             width:230px;
             border-bottom: 5px ridge  #CFFAA9;
+            @include lm {
+                right:calc(-50px - 50px);
+                width: 6rem;
+            }
+            @include mm { 
+                right:calc(-25px - 50px);
+                width: 4.5rem;
+            }
+            @include sm {
+                right:calc(0px - 50px);
+                width: 3rem;
+            }
         }      
     }
 }

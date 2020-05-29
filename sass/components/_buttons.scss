@@ -16,7 +16,10 @@
         margin-top: 10rem;
     }
     @include lm {
-        width: 10rem;
+        width: 14.5rem;
+        font-size: 22px;
+        height: 3rem;
+        padding-top: 1.5rem;
     }
     .btn__title {
         margin-top: auto;
@@ -34,6 +37,10 @@
         animation-iteration-count: infinite;
         animation-duration: 2s;
         animation-timing-function: ease-in-out;
+        @include lm {
+            width: 10px;
+            height: 10px;
+        }
         @include sm {
             width:9px;
             height:9px;
