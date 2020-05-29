@@ -20,16 +20,10 @@
     .chapter {
         font-size: 1.1rem;
         font-family:'Segoe Print', sans-serif;
-        background: linear-gradient(to top, #000000 0%, #000000 3px, transparent 4px) no-repeat;
-        background-size: 0 100%;
-        transition: background-size 300ms;
-        &:hover {
-             background-size: 100% 100%;
-        }
     }
     .dish {
-        padding-left: 5.5rem;
-        padding-right: 5.5rem;
+        padding-left: 7.5rem;
+        padding-right: 7.5rem;
         font-size: 0.9rem;
         font-family:'Segoe Print', sans-serif;
         @include lm {
@@ -49,18 +43,85 @@
         @include padding-bottom;
         .chapter {
             width: 12.5rem;
+            background: linear-gradient(to top, #0228DD 0%, #0228DD 3px, transparent 3px) no-repeat;
+            background-size: 0 100%;
+            transition: background-size 300ms;
+            &:hover {
+                background-size: 100% 100%;
+           }
         }
+        .chapter:before {
+            content:"";
+            position: absolute;
+            left:calc(-215px - 50px);
+            top:calc(50% - 0px);
+            width:250px;
+            border-bottom: 4px ridge  #0228DD;
+        }
+        .chapter:after {
+            content:'';
+            position:absolute;
+            right:calc(-215px - 50px);
+            top:calc(50% - 0px);
+            width:250px;
+            border-bottom: 4px ridge  #0228DD;
+            
+        }      
     }
     .chapter2 {
         @include padding-bottom;
         .chapter {
             width: 11.5rem;
+            background: linear-gradient(to top, #0670F3 0%, #0670F3 3px, transparent 3px) no-repeat;
+            background-size: 0 100%;
+            transition: background-size 300ms;
+            &:hover {
+                background-size: 100% 100%;
+           }
         }
+        .chapter:before {
+            content:"";
+            position: absolute;
+            left:calc(-220px - 50px);
+            top:calc(50% - 0px);
+            width:250px;
+            border-bottom: 4px ridge  #0670F3;
+        }
+        .chapter:after {
+            content:'';
+            position:absolute;
+            right:calc(-220px - 50px);
+            top:calc(50% - 0px);
+            width:250px;
+            border-bottom: 4px ridge  #0670F3;
+        }      
     }
     .chapter3 {
         padding-bottom: 80px;
         .chapter {
             width: 11.2rem;
+            background: linear-gradient(to top, #229DF9 0%, #229DF9 3px, transparent 3px) no-repeat;
+            background-size: 0 100%;
+            transition: background-size 300ms;
+            &:hover {
+                background-size: 100% 100%;
+           }
         }
+        .chapter:before {
+            content:"";
+            position: absolute;
+            left:calc(-225px - 50px);
+            top:calc(50% - 0px);
+            width:250px;
+            border-bottom: 4px ridge  #229DF9;
+        }
+        .chapter:after {
+            content:'';
+            position:absolute;
+            right:calc(-225px - 50px);
+            top:calc(50% - 0px);
+            width:250px;
+            border-bottom: 4px ridge  #229DF9;
+        }      
     }
 }

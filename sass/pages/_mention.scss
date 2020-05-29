@@ -1,0 +1,38 @@
+#mention {
+    .mention__block {
+        width: 50rem;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 8rem;
+        margin-bottom: 6rem;
+        padding-left: 4rem;
+        padding-right: 4rem;
+        padding-bottom: 4rem;
+        padding-top: 4rem;
+        background-color: #EEEEEE;
+        @include box-shadow;
+        font-family: 'Lora', serif;
+        text-align: justify;
+        a {
+            text-decoration: none;
+            color: $color-primary;
+            font-weight: bold;
+           
+        }
+        a:hover {
+            color: $color-secondary;
+        }
+        
+    }
+    h2 {
+        text-align: center;
+        font-size: 2rem;
+        font-family:'Segoe Print', sans-serif;
+    }
+    h3 {
+        text-align: center;
+        margin-top: 4.5rem;
+        margin-bottom: 1.5rem;
+        font-family:'Segoe Print', sans-serif;
+    }
+}

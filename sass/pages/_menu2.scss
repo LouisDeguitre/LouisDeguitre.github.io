@@ -12,8 +12,8 @@
         font-family: 'Lora', serif;
         font-size: 1.4rem;
         font-weight: 600;
-        
     }
+    
     .dish {
         font-family: 'Lora', serif;
         padding-left: 6rem;
@@ -36,30 +36,62 @@
         @include padding-bottom;
         .chapter {
             width: 16rem;
-            background: linear-gradient(to top, #C77412 0%, #C77412 3px, transparent 4px) no-repeat;
+            background: linear-gradient(to top, #C77412 0%, #C77412 3px, transparent 3px) no-repeat;
             background-size: 0 100%;
             transition: background-size 300ms;
             &:hover {
                 background-size: 100% 100%;
            }
         }
-        .dish {
-            color: #CD842F;
+        .chapter:before {
+            content:"";
+            position: absolute;
+            left:calc(-175px - 50px);
+            top:calc(50% - 0px);
+            width:200px;
+            border-bottom: 4px ridge  #C77412;
         }
+        .chapter:after {
+            content:'';
+            position:absolute;
+            right:calc(-175px - 50px);
+            top:calc(50% - 0px);
+            width:200px;
+            border-bottom: 4px ridge  #C77412;
+        }      
+    }
+    .dish {
+        color: #CD842F;
     }
     .chapter2 {
         color: #A66699;
          @include padding-bottom;
          .chapter {
              width: 12rem;
-            background: linear-gradient(to top, #A66699 0%, #A66699 3px, transparent 4px) no-repeat;
+            background: linear-gradient(to top, #A66699 0%, #A66699 3px, transparent 3px) no-repeat;
             background-size: 0 100%;
             transition: background-size 300ms;
             &:hover {
                 background-size: 100% 100%;
            }
         }
-         .dish {
+        .chapter:before {
+            content:"";
+            position: absolute;
+            left:calc(-175px - 50px);
+            top:calc(50% - 0px);
+            width:200px;
+            border-bottom: 4px ridge  #A66699;
+        }
+        .chapter:after {
+            content:'';
+            position:absolute;
+            right:calc(-175px - 50px);
+            top:calc(50% - 0px);
+            width:200px;
+            border-bottom: 4px ridge  #A66699;
+        } 
+        .dish {
             color: #B179A6;
         }
     }
@@ -68,13 +100,29 @@
         padding-bottom: 100px;
         .chapter {
             width: 15.3rem;
-            background: linear-gradient(to top, #6F4CCD 0%, #6F4CCD 3px, transparent 4px) no-repeat;
+            background: linear-gradient(to top, #6F4CCD 0%, #6F4CCD 3px, transparent 3px) no-repeat;
             background-size: 0 100%;
             transition: background-size 300ms;
             &:hover {
                 background-size: 100% 100%;
            }
         }
+        .chapter:before {
+            content:"";
+            position: absolute;
+            left:calc(-175px - 50px);
+            top:calc(50% - 0px);
+            width:200px;
+            border-bottom: 4px ridge  #6F4CCD;
+        }
+        .chapter:after {
+            content:'';
+            position:absolute;
+            right:calc(-175px - 50px);
+            top:calc(50% - 0px);
+            width:200px;
+            border-bottom: 4px ridge  #6F4CCD;
+        } 
         .dish {
             color: #6F4DCC;
         }
