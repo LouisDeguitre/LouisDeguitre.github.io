@@ -25,6 +25,9 @@
     .dish {
         display: flex;
         justify-content: space-between;
+        align-items: baseline;
+        margin-left: 10px;
+        margin-right: 10px;
         @include lm {
             flex-direction: column;
             text-align: left;
@@ -34,6 +37,7 @@
         @include lm {
             font-size: 18px;
             padding-top: 7px;
+           
             
             
         }

@@ -15,11 +15,14 @@
         width: 20rem;
         margin-top: 10rem;
     }
+    @include tablet {
+        margin-top: 4.5rem;
+    }
     @include lm {
         width: 14.5rem;
-        font-size: 22px;
-        height: 3rem;
-        padding-top: 1.5rem;
+        font-size: 20px;
+        height: 2rem;
+        padding-top: 0.7rem;
     }
     .btn__title {
         margin-top: auto;
